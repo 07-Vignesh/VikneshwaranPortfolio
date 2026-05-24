@@ -74,7 +74,7 @@ export default function SnakeCalendar() {
   const [loading, setLoading] = useState(true);
   const [totalSubmissions, setTotalSubmissions] = useState(0);
   const [fetchStatus, setFetchStatus] = useState<"loading" | "ok" | "error">("loading");
-  const animRef = useRef<number>();
+  const animRef = useRef<number | null>(null);
   const snakeRef = useRef<number[]>([]);
   const frameRef = useRef(0);
   const SNAKE_LEN = 12;
