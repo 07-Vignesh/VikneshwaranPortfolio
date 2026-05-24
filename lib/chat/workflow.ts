@@ -37,9 +37,8 @@ class OpenRouterChatModel extends ChatOpenAI {
             try {
                 // Perform a search directly
                 const searchTool = new TavilySearch({
-                    maxResults: 3,
-                    apiKey: process.env.TAVILY_API_KEY,
-                });
+                 maxResults: 3,
+                 });
                 const searchResults = await searchTool.invoke(lastMessage.content);
 
                 // Add search results as a system message
