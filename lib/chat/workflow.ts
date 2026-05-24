@@ -39,8 +39,9 @@ class OpenRouterChatModel extends ChatOpenAI {
                 const searchTool = new TavilySearch({
                  maxResults: 3,
                  });
-                const searchResults = await searchTool.invoke(lastMessage.content);
-
+const searchResults = await searchTool.invoke({
+  query: lastMessage.content,
+});
                 // Add search results as a system message
                 formattedMessages.splice(formattedMessages.length - 1, 0, {
                     role: "system",
