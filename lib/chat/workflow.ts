@@ -1,5 +1,5 @@
 import { ChatOpenAI } from "@langchain/openai";
-import { TavilySearchResults } from "@langchain/community/tools/tavily_search";
+import { TavilySearch } from "@langchain/tavily";
 import { BaseMessage, AIMessage } from "@langchain/core/messages";
 import { queryVectorStore } from "@/lib/embeddings";
 import { ChatMessage, ChatResponse, OpenRouterFields, OpenRouterMessage } from "./types";
@@ -36,7 +36,7 @@ class OpenRouterChatModel extends ChatOpenAI {
         if (lastMessage.role === "user" && this.isSearchQuery) {
             try {
                 // Perform a search directly
-                const searchTool = new TavilySearchResults({
+                const searchTool = new TavilySearch({
                     maxResults: 3,
                     apiKey: process.env.TAVILY_API_KEY,
                 });
