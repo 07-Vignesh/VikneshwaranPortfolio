@@ -6,10 +6,11 @@ function getAllowedOrigins(): string[] {
     return process.env.ALLOWED_ORIGINS.split(",").map((o) => o.trim());
   }
   // Fallback defaults (production)
-  return [
-    "https://www.vikneshwaran.dev",
-    "https://www.www.rushikeshnimkar.com",
-  ];
+ return [
+  "http://localhost:3000",
+  "https://vikneshwaran.vercel.app",
+  "https://www.vikneshwaran.dev",
+];
 }
 
 // Shared origin check — import this in all API routes
