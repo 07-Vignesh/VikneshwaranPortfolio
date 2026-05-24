@@ -35,20 +35,23 @@ export default function RootLayout({
         <meta name="theme-color" content="#000000" />
         <meta name="robots" content="index, follow" />
         <link
-          rel="icon"
-          type="image/png"
-          href="/favicon.png"
-          sizes="96x96"
-        />
-        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-        <link rel="shortcut icon" href="/favicon.ico" />
-        <link
-          rel="apple-touch-icon"
-          sizes="180x180"
-          href="/apple-touch-icon.png"
-        />
-        <meta name="apple-mobile-web-app-title" content="Viknesh" />
-        <link rel="manifest" href="/site.webmanifest" />
+  rel="icon"
+  type="image/png"
+  href="/favicon.png"
+  sizes="96x96"
+/>
+
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+<link rel="shortcut icon" href="/favicon.ico" />
+
+<link
+  rel="apple-touch-icon"
+  sizes="180x180"
+  href="/apple-touch-icon.png"
+/>
+
+<link rel="manifest" href="/site.webmanifest" />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen flex flex-col`}

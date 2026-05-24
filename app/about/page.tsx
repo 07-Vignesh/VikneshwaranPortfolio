@@ -197,19 +197,26 @@ export default function About() {
             </motion.p>
 
             {/* Hobbies flip */}
-            <motion.div variants={fadeUp} style={{
-              display: "inline-flex", alignItems: "center", flexWrap: "wrap", gap: 0,
-              fontFamily: "var(--font-body)",
-              fontSize: "clamp(0.875rem, 2.2vw, 0.9375rem)",
-              color: "#6B5744", lineHeight: 1.8,
-            }}>
-              <span>When I&apos;m not coding, I usually</span>
-              <FlipWords
-                words={words}
-                 className="ml-[10px] text-[#9B2C1A] font-semibold"
-                
-              />
-            </motion.div>
+           <motion.div
+  variants={fadeUp}
+  style={{
+    display: "inline-flex",
+    alignItems: "center",
+    flexWrap: "wrap",
+    gap: "4px",
+    fontFamily: "var(--font-body)",
+    fontSize: "clamp(0.875rem, 2.2vw, 0.9375rem)",
+    color: "#6B5744",
+    lineHeight: 1.8,
+  }}
+>
+  <span>When I&apos;m not coding, I usually</span>
+
+  <FlipWords
+    words={words}
+    className="text-[#9B2C1A] font-semibold"
+  />
+</motion.div>
           </motion.div>
 
           {/* ══ RIGHT ══ */}

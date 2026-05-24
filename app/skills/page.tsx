@@ -344,7 +344,7 @@ export default function Skills() {
           style={{ marginTop: "3.5rem", display: "flex", justifyContent: "center" }}
         >
           <div style={{
-            display: "flex", alignItems: "center", gap: "0.75rem",
+            display: "flex", alignItems: "flex-startr", gap: "0.75rem",
             padding: "0.9rem 1.6rem",
             borderRadius: "0.75rem",
             background: "rgba(255,255,255,0.78)",
@@ -356,7 +356,7 @@ export default function Skills() {
             <span style={{
               width: 6, height: 6, borderRadius: "50%",
               background: "#9B2C1A", flexShrink: 0, opacity: 0.7,
-              display: "inline-block",
+              display: "inline-block",  marginTop: "9px",
             }} />
             <p style={{
               fontFamily: "var(--font-body)",
