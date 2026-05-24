@@ -206,13 +206,8 @@ export default function About() {
               <span>When I&apos;m not coding, I usually</span>
               <FlipWords
                 words={words}
-                className=""
-                style={{
-                  color: "#9B2C1A",
-                  fontWeight: 600,
-                  fontFamily: "var(--font-body)",
-                  marginLeft: "0.3em",
-                }}
+                 className="ml-[10px] text-[#9B2C1A] font-semibold"
+                
               />
             </motion.div>
           </motion.div>
