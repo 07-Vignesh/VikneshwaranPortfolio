@@ -10,7 +10,7 @@ import { motion } from "framer-motion";
 import NeuralBackground from "@/components/neural-background";
 
 const imageMetadata = {
-  profile1: { url: "/profile1.jpeg", alt: "Vikneshwaran - Full Stack Developer" },
+  profile1: { url: "/me.jpeg", alt: "Vikneshwaran - Full Stack Developer" },
 };
 
 const container = {
