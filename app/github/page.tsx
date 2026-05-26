@@ -16,7 +16,7 @@ const container = {
   show: { transition: { staggerChildren: 0.12, delayChildren: 0.1 } },
 };
 
-const USERNAME = "7VigneshVicky";
+const USERNAME = "7VikneshVicky";
 
 interface LCStats {
   totalSolved: number;

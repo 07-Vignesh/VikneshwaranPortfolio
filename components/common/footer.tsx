@@ -9,7 +9,7 @@ export function Footer() {
   const socials = [
     { href: "https://github.com/07-Vignesh",             icon: <FaGithub size={15} />,   label: "GitHub"   },
     { href: "https://www.linkedin.com/in/viknesh-waran/", icon: <FaLinkedin size={15} />, label: "LinkedIn" },
-    { href: "https://leetcode.com/u/7VigneshVicky/",      icon: <SiLeetcode size={15} />, label: "LeetCode" },
+    { href: "https://leetcode.com/u/7VikneshVicky/",      icon: <SiLeetcode size={15} />, label: "LeetCode" },
   ];
 
   const navLinks = [

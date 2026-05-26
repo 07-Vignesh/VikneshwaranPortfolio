@@ -239,7 +239,7 @@ export default function HomePage() {
                 {[
                   { href: "https://github.com/07-Vignesh", icon: <FaGithub size={16} />, label: "GitHub" },
                   { href: "https://www.linkedin.com/in/viknesh-waran/", icon: <FaLinkedin size={16} />, label: "LinkedIn" },
-                  { href: "https://leetcode.com/u/7VigneshVicky/", icon: <SiLeetcode size={16} />, label: "LeetCode" },
+                  { href: "https://leetcode.com/u/7VikneshVicky/", icon: <SiLeetcode size={16} />, label: "LeetCode" },
                 ].map(({ href, icon, label }) => (
                   <MagneticButton key={label}>
                     <a href={href} target="_blank" rel="noopener noreferrer" aria-label={label}
